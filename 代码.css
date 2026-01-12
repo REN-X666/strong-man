@@ -1,0 +1,107 @@
+ <!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>静态模板示例</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="简洁响应式静态模板，带暗色模式与移动菜单。" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MyStatic</a>
+
+      <nav class="nav">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#features">功能</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" aria-label="切换主题" class="icon-btn">🌙</button>
+        <button id="menuToggle" class="icon-btn menu-btn" aria-label="菜单">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>干净简洁的静态模板</h1>
+          <p>适合快速搭建展示页、个人作品集或小型静态站点。可直接修改 HTML/CSS/JS。</p>
+          <p>
+            <a class="btn" href="#features">了解功能</a>
+            <a class="btn alt" href="#contact">联系我们</a>
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="mockup">示例区域</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">主要功能</h2>
+        <div class="grid features-grid">
+          <article class="card">
+            <h3>响应式布局</h3>
+            <p>使用 CSS Grid 与 Flexbox，支持移动端与桌面端自适应。</p>
+          </article>
+          <article class="card">
+            <h3>暗色/亮色模式</h3>
+            <p>用户可切换主题，选择会保存在本地存储中。</p>
+          </article>
+          <article class="card">
+            <h3>轻量脚本</h3>
+            <p>纯原生 JavaScript，只有必要的交互脚本，无框架依赖。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="section-title">关于模板</h2>
+        <p>这是一个可扩展的静态模板起点。你可以替换文案、添加组件、或集成到静态站点生成器（如 Hugo、Jekyll、Eleventy）中。</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">联系</h2>
+        <form class="contact-form" onsubmit="return false;">
+          <label>
+            名称
+            <input type="text" placeholder="你的名字" />
+          </label>
+          <label>
+            邮箱
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            信息
+            <textarea rows="4" placeholder="写点什么..."></textarea>
+          </label>
+          <div>
+            <button class="btn" type="submit">发送</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 MyStatic — 静态模板示例</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
